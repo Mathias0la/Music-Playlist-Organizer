@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Music Playlist Organizer</title>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+      
+        <form id="music-form">
+            <div id="input-fields">
+                <h1>Music Playlist Organizer</h1>
+                <!--Required gives an automatic response that both fields are required for the input-->
+                <input type="text" name="artist-input" class="input" id="artist-input" placeholder="Enter Artist Name" required>
+                <input type="text" name="song-input" class="input" id="song-input" placeholder="Enter Song Name" required>
+                <select id="genre-input" name="genre-input">
+                    <option value="" disabled selected hidden>Select a genre</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Metal">Metal</option>
+                    <option value="K-pop">K-pop</option>
+                    <option value="Techno">Techno</option>
+                    <option value="Indie">Indie</option>
+                </select>
+                <input type="submit" id="submitbtn">
+                <h2>Sort by genre:</h2>
+                <select id="genre-sort">
+                    <option value="All">All</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Metal">Metal</option>
+                    <option value="K-pop">K-pop</option>
+                    <option value="Techno">Techno</option>
+                    <option value="Indie">Indie</option>
+                </select>
+            </div>
+            
+           
+        </form>
+    </header>
+
+    <main>
+        <div id="song-list">
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
